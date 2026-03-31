@@ -5,5 +5,7 @@ We first started of with determining prior distribution values based off current
 
 As such, we shifted from quadratic approximation of the posterior to approximating it via Hamiltonian Markov Chain Monte Carlo (MCMC). The new posterior distribution model handled simulation noise well and was sound when tested via posterior sampling. 
 The final sample size calculations indicate that a sample of around 90 is the safest option when wanting to detect the effect size of mean gradient on VO2max. 
+MCMC approximation for the posterior was done the ulam function in the rethinking package on R. 
 
 The priors included an effect size of -0.15 per mmHg change, with a hypothesised 1.5 unit decrease in VO2max with 10 mmHg change in mean gradient. A sample size of 90 would have 83% power to detect this effect size according to our simulations. 
+
